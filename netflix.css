@@ -28,6 +28,14 @@ body {
     color: white;
     margin: 0 15px;
     text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header .navigation a:hover {
+    background-color: white;
+    color: black;
 }
 
 .header .user-icon img {
@@ -80,7 +88,7 @@ body {
     font-size: 1em;
 }
 
-/* Movie Sections */
+/* Movie Sections */    
 .movie-section {
     padding: 20px;
 }
