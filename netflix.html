@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="netflix.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-text">N</div>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <div class="logo">
@@ -56,5 +61,14 @@
         </div>
     </section>
 
+    <script>
+        // JavaScript to hide the preloader after page load
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.querySelector('.preloader').style.display = 'none';
+                document.body.style.overflow = 'auto'; // Enable scrolling after the preloader is hidden
+            }, 3000); // Hide the preloader after 3 seconds
+        });
+    </script>
 </body>
 </html>
